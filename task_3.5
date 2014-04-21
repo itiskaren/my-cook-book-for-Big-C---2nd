@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+	double total;
+	int r_total = total + 0.5;
+	char ans;
+	cout<<"please enter your grade!\n";
+	cin>> total;	
+	
+	if(r_total>= 85){
+	
+	cout<<"This is high distinction\n";
+	
+	} 
+	else if(r_total>=75){
+	
+	cout<<"This is distinction\n";
+	
+	}
+	else if(r_total>=65){
+	
+	cout<<"This is credit\n";
+	
+	}
+	else if(r_total>=50){
+	
+	cout<<"This is pass\n";
+	}
+	
+	
+	else{
+	if(r_total>=45){
+	
+	cout<<"Is it your last course in the program? Please enter y/n"<<endl;
+	
+	cin>>ans;
+	
+	if(ans == "y"|| ans == "Y"){
+	
+	cout<<"You pass!\n";
+	
+	}
+	else{
+	
+	cout<<"You failed!\n";
+	 
+	}
+	}
+	}
+
+return 0;
+}
