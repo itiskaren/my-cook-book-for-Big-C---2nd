@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+int main()
+{	
+  int Nat = 4429;
+  int band1 = 5310;
+  int band2 = 7567;
+  int band3 = 8859;
+  cout << fixed << setprecision(2);
+  cout << setw(25) << "Category" << setw(10) << "Fee" << setw(15) << "Discount" << "\n";
+  cout << setw(25) << "National Priority" << setw(10) << Nat << setw(15) << Nat*0.15 << "\n";
+  cout << setw(25) << "Band 1" << setw(10) << band1 << setw(15) << band1*0.15 << "\n";
+  cout << setw(25) << "Band 2" << setw(10) << band2 << setw(15) << band2*0.15 << "\n";
+  cout << setw(25) << "band 3" << setw(10) << band3 << setw(15) << band3*0.15 << "\n";  
+
+  return 0;
+}
+
+
+
