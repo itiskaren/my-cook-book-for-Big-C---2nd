@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int i;
+    string dummy;
+    
+    cin >> i;
+    while (true){
+        if (cin.fail()){
+            cin.clear();
+            getline(cin, dummy); 
+            if (cin.eof()){
+                break;
+            }
+        }
+        cout << i << "\n";
+        cin >> i;
+    }                     
+     
+   
+    return 0;
+}
