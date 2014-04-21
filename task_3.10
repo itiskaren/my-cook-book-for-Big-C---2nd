@@ -1,0 +1,24 @@
+#include<iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main(){
+
+	double balance = 1000.0;
+	double rate = 6.0;
+	int year;
+
+	for(year=0; year<10; year++){
+
+	balance = balance * (1 + rate/100);
+
+	}
+
+	cout<< balance<<"\n";
+	
+	
+
+
+return 0;
+}
