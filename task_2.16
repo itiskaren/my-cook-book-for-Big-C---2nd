@@ -1,0 +1,27 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main(){
+	
+	string str;
+	getline(cin, str);
+	
+	cout<<"Please enter the string.\n";
+	
+	cin>>str;
+	cout<<"the length of the string is "<<str.length()<<"\n";
+	
+	string name=str.substr(0, 4);
+	
+	cout<<"What does "<< name <<" have?"<<"\n";
+	
+	int x ,y;
+	y = 4;
+	x = str.length()- y;
+	cout<< name <<" has a "<<str.substr(x, y)<<"\n";
+ 
+	return 0;
+
+
+}
