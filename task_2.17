@@ -1,0 +1,16 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main(){
+
+	string str1 = "Paul has a flying fish.";
+	string str2 = "Mary has a little lamp.";
+	string str3;
+
+	str3 = str1 + "Peter has a port of honey." + str2;
+	cout<< str3 << "\n";
+	return 0;
+
+
+}
